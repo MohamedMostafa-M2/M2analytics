@@ -476,8 +476,6 @@ footer {
 ======================================= */
 
 @media (max-width: 768px) {
-
-    /* Topbar */
     .m2-topbar {
         height: 50px;
     }
@@ -485,20 +483,14 @@ footer {
     .m2-topbar-logo {
         font-size: 14px;
     }
-
-    /* Sidebar becomes hidden / collapsible */
     .m2-sidebar {
         width: 220px;
         transform: translateX(-250px);
         transition: 0.4s ease;
     }
-
-    /* Show sidebar when active class is toggled (JS needed) */
     .m2-sidebar.active {
         transform: translateX(0);
     }
-
-    /* Toggle button (add to HTML) */
     .m2-menu-toggle {
         position: fixed;
         top: 5px;
@@ -508,14 +500,10 @@ footer {
         cursor: pointer;
         z-index: 20;
     }
-
-    /* Main content full width */
     .m2-main {
         margin-left: 0;
         padding: 10px;
     }
-
-    /* KPI Cards become 1 column */
     .m2-cards-row {
         flex-direction: column;
         height: auto;
@@ -525,8 +513,6 @@ footer {
         width: 100%;
         height: auto;
     }
-
-    /* Two columns → 1 column */
     .m2-two-cols {
         flex-direction: column;
     }
@@ -535,8 +521,6 @@ footer {
     .m2-feed {
         width: 100%;
     }
-
-    /* Recent details → stacked */
     .m2-details-section {
         flex-direction: column;
         gap: 25px;
@@ -547,30 +531,26 @@ footer {
     }
 }
 
-/* =============== TABLET RESPONSIVE (769px – 1024px) =============== */
+/* =======================================
+    TABLET RESPONSIVE (769px – 1024px)
+======================================= */
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
     .m2-sidebar {
         width: 230px;
     }
-
     .m2-main {
         margin-left: 240px;
     }
-
-    /* KPI cards: 2 per row */
     .m2-cards-row {
         flex-wrap: wrap;
         height: auto;
     }
-
     .m2-card {
         width: calc(50% - 10px);
         margin-bottom: 10px;
     }
-
-    /* Regions & feeds side by side but flexible */
     .m2-two-cols {
         flex-direction: column;
     }
@@ -581,10 +561,13 @@ footer {
     }
 }
 
-/* Center main content on very large screens */
+/* =======================================
+            very large screens
+======================================= */
 @media (min-width: 1400px) {
     .m2-main {
         margin-left: 320px;
         margin-right: auto;
     }
 }
+
