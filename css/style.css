@@ -468,3 +468,81 @@ footer {
     text-align: center;
     letter-spacing: 5px;
 }
+
+
+
+/* =======================================
+    MOBILE RESPONSIVE (max-width: 768px)
+======================================= */
+
+@media (max-width: 768px) {
+
+    /* Topbar */
+    .m2-topbar {
+        height: 50px;
+    }
+
+    .m2-topbar-logo {
+        font-size: 14px;
+    }
+
+    /* Sidebar becomes hidden / collapsible */
+    .m2-sidebar {
+        width: 220px;
+        transform: translateX(-250px);
+        transition: 0.4s ease;
+    }
+
+    /* Show sidebar when active class is toggled (JS needed) */
+    .m2-sidebar.active {
+        transform: translateX(0);
+    }
+
+    /* Toggle button (add to HTML) */
+    .m2-menu-toggle {
+        position: fixed;
+        top: 5px;
+        left: 10px;
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    /* Main content full width */
+    .m2-main {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    /* KPI Cards become 1 column */
+    .m2-cards-row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .m2-card {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Two columns → 1 column */
+    .m2-two-cols {
+        flex-direction: column;
+    }
+
+    .m2-region,
+    .m2-feed {
+        width: 100%;
+    }
+
+    /* Recent details → stacked */
+    .m2-details-section {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .m2-detail-block {
+        width: 100%;
+    }
+}
